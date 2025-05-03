@@ -1,0 +1,87 @@
+body {
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #ffffff, #FFDDF9);
+    padding: 20px;
+    text-align:center;
+  }
+  header {
+      color:black;
+      padding: 25px;
+      font-size: 25px;
+      text-align: center;
+  }
+
+  .menu button {
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: 0;
+      border-radius: 25px;
+      background-color:#D685C9;
+      color: white;
+      cursor:pointer;
+    }
+
+    .menu button:hover {
+      background-color:#FFD1F7;
+    }
+
+    .drawing button {
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: 0;
+      border-radius: 40px;
+      background-color:#89A052;
+      color: white;
+      cursor:pointer;
+    }
+
+    .drawing button:hover {
+      background-color: #D3E6A6;
+    }
+
+  .aboutme-section, .education-section, .contact-section {
+    display:none;
+  }
+
+  .image-gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    background-color: #D685C9;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    margin-top:auto;
+  }
+
+  #footer {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+  @media (max-width: 400px) {
+    nav {
+      flex-direction: column;
+    }
+  }
+
+  img[alt] {
+    max-width: 50%;
+    height: auto;
+    background:transparent;
+    padding:8px;
+    border:1px solid #ccc;
+    box-shadow:5px 5px 5px #999;
+ }
+
+ ::selection {
+  background-color:#D3E6A6;
+ }

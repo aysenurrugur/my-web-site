@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayşenur Uğur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>body {
+  margin: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to right, #ffffff, #FFDDF9);
+  padding: 20px;
+  text-align:center;
+}
+header {
+    color:black;
+    padding: 25px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.menu button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 25px;
+    background-color:#D685C9;
+    color: white;
+    cursor:pointer;
+  }
+
+  .menu button:hover {
+    background-color:#FFD1F7;
+  }
+
+  .drawing button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 40px;
+    background-color:#89A052;
+    color: white;
+    cursor:pointer;
+  }
+
+  .drawing button:hover {
+    background-color: #D3E6A6;
+  }
+
+.aboutme-section, .education-section, .contact-section {
+  display:none;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #D685C9;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  margin-top:auto;
+}
+
+#footer {
+  font-size: 12px;
+}
+
+p {
+  font-size: 22px;
+}
+@media (max-width: 400px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+img[alt] {
+  max-width: 50%;
+  height: auto;
+  background:transparent;
+  padding:8px;
+  border:1px solid #ccc;
+  box-shadow:5px 5px 5px #999;
+}
+
+::selection {
+background-color:#D3E6A6;
+}
+</style>
+
+<body>
+  <header>
+    <h1>Welcome to My Personal Webpage!</h1>
+  </header>
+
+  <div class="menu"> 
+    <button onclick="showSection('home')">Home</a>
+    <button onclick="showSection('aboutme')">About Me</a>
+    <button onclick="showSection('education')">Education</a>
+    <button onclick="showSection('contact')">Contact</a>
+  </div>
+
+    <div class="container">
+      <div id="home" class="home-section">
+      <h2> <class="section-title">Hi, I am Ayşenur Uğur👋 </h2>
+      <p> This is my personal site. You can check out my hobbies, educational background, and how to reach me above.</p>
+      <img src="photos/devrim.jpg" alt="me">
+    </div>
+  
+    <div id="aboutme" class="aboutme-section">
+      <h2 class="section-title">About Me</h2>
+      <p id="aboutme"><big>I am Ayşenur Uğur.</big> I was born in 2002 in Ankara, Turkey, but my family roots are in Sungurlu, Çorum. 
+        I currently live in Ankara with my family. 
+        I have an older brother and sister, both of whom are married.
+
+        I'm a first-year student at <em>Middle East Technical University (METU)</em>, studying Computer Education and Instructional Technology (CEIT). 
+        I am the team leader of 
+        <a href="https://www.linkedin.com/company/odt%C3%BC-g%C3%B6k%C3%A7e/" target="_blank" title="LinkedIn Account">ODTÜ GÖKÇE</a>, 
+        a fixed-wing UAV team participating in <em>TEKNOFEST</em>, one of Turkey’s largest technology competitions. 
+        Our team focuses on developing innovative UAV solutions, especially for search and rescue missions.
+        <br>
+        Alongside my academic journey, I work as the social media manager for a foundation, where I create visual content, manage announcements, and organize digital communication strategies. 
+        I also offer private tutoring in mathematics and English for middle school students.
+        <br>
+        My experiences reflect a deep passion for both technology and education, and I enjoy combining creative thinking with practical problem-solving. 
+        In the future, I aim to develop impactful tech-based educational tools and continue working in interdisciplinary teams that create meaningful change.
+        <br>
+        In my free time, I enjoy painting with watercolors as a creative outlet and a way to relax. 
+        <br>
+        <em>You can reach some of my watercolor paintings below with a soft music.</em></p>
+
+       
+
+      <div class="drawing">
+        <button onclick="window.location.href='paintings.html'">My Paintings</button>
+      </div>
+    </div>
+
+    <div id="education" class="education-section">
+      <h2 class="section-title">Education</h2>
+      <br>
+        <h3>High School:<a href="https://tevfikileriihl.meb.k12.tr/" target="_blank" title="TİAİHL Web Site">Tevfik İleri Anatolia Imam Hatip High School</a> (2017-2022)</h3>
+        <p>Completed a comprehensive curriculum with a focus on both academic and cultural education.
+          Developed strong skills in communication, teamwork, and self-discipline.</p>
+
+        <h3>University:<a href="https://www.metu.edu.tr/tr" target="_blank" title="METU Web Site"> Middle East Technical University /
+          <a href="https://ceit.metu.edu.tr/" target="_blank" title="CEIT Web Site">Computer Education & Instructional Technology</a> (2022-Present)</h3>
+        <p>Currently a first-year student focusing on the intersection of technology, education, and digital media. 
+          Coursework includes programming fundamentals, instructional design, and educational technologies. 
+          Actively involved in extracurricular activities such as UAV development and social media communication.</p>
+      
+      <h3>Certificates:</h3>
+      
+      <p><a href="folders/BTK Canva sertifika.pdf" target="_blank" title="Download">Uygulamalı Canva</a> by BTK Akademi</p>
+      
+
+      <p><a href="folders/CANVA Sertifika kopyası.pdf" target="_blank" title="Download">Canva Kariyer Zirvesi</a> by Etkin Kampüs</p>
+      
+    </div>
+
+    
+
+    <div id="contact" class="contact-section">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Whether you'd like to collaborate on a project, ask a question, or inquire about private tutoring in Mathematics or English, 
+        <br>I’d be happy to hear from you!</p>
+        <p>You can reach me directly via email for lessons, opportunities, or simply to connect:</p>
+        <div style="font-size: 1.2em; line-height: 2em;"> 
+          📧 &nbsp; <a href="mailto:your-email@example.com">uguraysenur06@gmail.com</a><br> 
+          💼 &nbsp; <a href="https://www.linkedin.com/in/ay%C5%9Fenuru%C4%9Fur22to12a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a><br>
+          📍 &nbsp; Ankara, Turkey </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p id="footer">&copy; 2025 Ayşenur Uğur. All content is copyright free.</p>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.home-section, .education-section, .aboutme-section, .contact-section')
+        .forEach(section => section.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+
+    // Show home by default
+    showSection('home');
+  </script>
+</body>
+</html>
